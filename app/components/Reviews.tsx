@@ -7,10 +7,26 @@ import e4 from '../assets/e4.svg'
 import e5 from '../assets/e5.svg'
 import bro from '../assets/bro.svg'
 
+type ImageDetail = {
+    src: string;
+    width: number;
+    height: number;
+    alt: string;
+    opacity?: string;
+    marginTop: string;
+    marginLeft: string;
+    bgWhite?: string;
+};
 const Reviews: React.FC = () => {
+    const imageDetails: ImageDetail[] = [
+        { src: e1, width: 90, height: 90, alt: "Image 1", opacity: "opacity-70", marginTop: "mt-[45px]", marginLeft: "ml-[229px]" },
+        { src: e2, width: 150, height: 150, alt: "Image 2", opacity: "opacity-70", marginTop: "mt-[45px]", marginLeft: "ml-[229px]" },
+        { src: e3, width: 230, height: 230, alt: "Image 3", marginTop: "mt-[45px]", marginLeft: "ml-[229px]" },
+        { src: e4, width: 150, height: 150, alt: "Image 4", opacity: "opacity-70", marginTop: "mt-[45px]", marginLeft: "ml-[229px]", bgWhite: "bg-white" },
+        { src: e5, width: 90, height: 90, alt: "Image 5", opacity: "opacity-70", marginTop: "mt-[45px]", marginLeft: "ml-[229px]", bgWhite: "bg-white bg-opacity-70" },
+    ];
     return (
         <div className="h-[1075px] w-full mb-[117.67px] ">
-        {/* <div className="h-[1075px] w-[1280px] mb-[117.67px] "> */}
             <div className="text-sky-700 text-4xl font-semibold font-poppins ml-[475px] mt-[510px] text-[36px] leading-[54px]">Customer Review</div>
             <div className="w-[596px] text-center text-neutral-400 text-base font-normal font-poppins text-[16px] ml-[342px] leading-[30px] mt-[11px]">
                 <p>
@@ -18,36 +34,16 @@ const Reviews: React.FC = () => {
                 </p>
             </div>
             <div className="flex space-x-[28px] mt-[62px] h-[230px]">
-                <Image className='flex justify-center items-center mt-[45px] ml-[229px] opacity-70'
-                    src={e1}
-                    width={90}
-                    height={90}
-                    alt="logo"
-                />
-                <Image className='flex justify-center items-center mt-[45px] ml-[229px] opacity-70'
-                    src={e2}
-                    width={150}
-                    height={150}
-                    alt="logo"
-                />
-                <Image className='flex justify-center items-center mt-[45px] ml-[229px]'
-                    src={e3}
-                    width={230}
-                    height={230}
-                    alt="logo"
-                />
-                <Image className='flex justify-center items-center mt-[45px] ml-[229px] bg-white opacity-70'
-                    src={e4}
-                    width={150}
-                    height={150}
-                    alt="logo"
-                />
-                <Image className='flex justify-center items-center mt-[45px] ml-[229px] bg-white bg-opacity-70'
-                    src={e5}
-                    width={90}
-                    height={90}
-                    alt="logo"
-                />
+                {imageDetails.map((image, index) => (
+                    <Image
+                        key={index}
+                        className={`flex justify-center items-center ${image.marginTop} ${image.marginLeft} ${image.opacity || ''} ${image.bgWhite || ''}`}
+                        src={image.src}
+                        width={image.width}
+                        height={image.height}
+                        alt={image.alt}
+                    />
+                ))}
             </div>
             <div className="text-center text-sky-700 text-[28px] font-semibold font-poppins mt-[23px] leading-[42px]">Sophia Loyd</div>
             <div className="text-center text-neutral-400 text-xl font-normal font-poppins">CEO xo</div>

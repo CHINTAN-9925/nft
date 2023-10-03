@@ -90,11 +90,6 @@ const Faqs: React.FC = () => {
                                 <Image src={plus} width={11.52} height={11.52} alt="plus-sign" />
                             )}
                         </div>
-                        {/* {visibleDescriptionId === faq.id && (
-                            <div className="block lg:hidden text-sky-700 text-lg font-normal font-dm-sans leading-[30px] mt-4">
-                                {faq.answer}
-                            </div>
-                        )} */}
                     </div>
                 ))}
             </div>

@@ -24,16 +24,20 @@ const Navbar: React.FC = () => {
                         alt="logo"
                     />
                 </div>
-                <div className="flex items-center text-black space-x-[60px] mt-[50px] text-[16px] p-[2px]">
-                    {/* nav links */}
-                    <Link className='h-[16px] text-base font-normal  text-neutral-400 font-dm-sans leading-[18px]' href="/home">Home</Link>
-                    <Link className='h-[16px] text-base font-normal  text-neutral-400 font-dm-sans leading-[18px]' href="/about">About</Link>
-                    <Link className='h-[16px] text-base font-normal  text-neutral-400 font-dm-sans leading-[18px]' href="/contact">Contact</Link>
-                    <Link className='h-[16px] text-base font-normal  text-neutral-400 font-dm-sans leading-[18px]' href="/resources">Resources</Link>
+                <nav className="flex items-center text-black space-x-[60px] mt-[50px] text-[16px] p-[2px]">
+                    <ul className="flex space-x-[60px] list-none">
+                        {/* nav links */}
+                        <li><Link className='nav-link' href="/home">Home</Link></li>
+                        <li><Link className='nav-link' href="/about">About</Link></li>
+                        <li><Link className='nav-link' href="/contact">Contact</Link></li>
+                        <li><Link className='nav-link' href="/resources">Resources</Link></li>
+                    </ul>
                     <div className='mr-[89px] '>
-                        <button className='bg-gradient-to-b from-sky-500 to-cyan-400  text-white text-lg font-medium font-poppins w-[165px] h-[53px] mr-[57px] rounded-[10px] '><div className="h-[]27px pt-[13px] pb-[13px] pl-[31px] pr-[31px]">Get started</div></button>
+                        <button className='btn-primary w-[165px] h-[53px] mr-[57px]'>Get started</button>
                     </div>
-                </div>
+                </nav>
+
+
             </div>
         </>
     )

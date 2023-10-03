@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&display=swap'); /*poppince*/
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&display=swap'); /*dm-sans*/
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&family=Rammetto+One&display=swap'); /*remmoto-one*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&display=swap');
+/*poppince*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&display=swap');
+/*dm-sans*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=DM+Sans:opsz,wght@9..40,200;9..40,400&family=Martian+Mono:wght@700&family=Poppins:wght@100;200;300;400&family=Rammetto+One&display=swap');
+/*remmoto-one*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +13,7 @@
     -webkit-text-stroke: 1.5px #0098FF;
   }
 }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -23,6 +27,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
 .trailing-center::after {
   content: '\A';
   white-space: pre;
@@ -34,3 +39,13 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #FFFFFF
 }
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-b from-sky-500 to-cyan-400 text-white text-lg font-medium font-poppins rounded-[10px] cursor-pointer;
+  }
+  .nav-link {
+    @apply text-base font-normal text-neutral-400 font-dm-sans leading-[18px];
+  }
+}
+
