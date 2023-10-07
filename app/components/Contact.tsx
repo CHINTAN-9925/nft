@@ -29,8 +29,7 @@ const Contact = () => {
         }
     ];
     return (
-
-        <div className="flex-none mt-[43px] ml-[108px]">
+        <div className="flex-none mt-[43px] ml-[108px] md:order-3">
             <div className="text-white text-xl font-medium font-poppins leading-[18px] mb-[28px]">Contact us</div>
 
             {contactInfos.map((info, index) => (
@@ -49,8 +48,28 @@ const Contact = () => {
                 </div>
             ))}
         </div>
-
     )
+    // return (
+    //     <div className="flex-none mt-4 md:mt-[43px] p-4 md:ml-[108px]">
+    //         <div className="text-white text-xl font-medium font-poppins leading-[18px] mb-[28px]">Contact us</div>
+
+    //         {contactInfos.map((info, index) => (
+    //             <div className="flex items-center mb-[40px] space-x-2" key={index}>
+    //                 <div className="w-5 h-5 flex">
+    //                     <Image
+    //                         src={info.icon}
+    //                         width={20}
+    //                         height={20}
+    //                         alt={info.alt}
+    //                     />
+    //                 </div>
+    //                 <div className="text-white text-sm font-medium font-poppins leading-[18px]">
+    //                     {info.text}
+    //                 </div>
+    //             </div>
+    //         ))}
+    //     </div>
+    // )
 }
 
 export default Contact

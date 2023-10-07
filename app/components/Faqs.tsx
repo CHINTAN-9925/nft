@@ -58,23 +58,23 @@ const Faqs: React.FC = () => {
                     <div
                         key={faq.id}
                         className={`
-                            flex flex-col lg:flex-row justify-between items-start lg:items-center p-4 
+                            flex flex-row items-center justify-between p-4 
                             ${visibleDescriptionId === faq.id ? 'bg-sky-50' : 'bg-white'} 
                             rounded-[30px] border border-neutral-200 
                         `}
                     >
-                        <div className="flex flex-col lg:flex-grow pr-4 pl-4 lg:pl-[63.51px] pt-[28px]">
-                            <div className={`text-${visibleDescriptionId === faq.id ? 'sky-700' : 'stone-900'} text-xl md:text-[22px] lg:text-[22px] font-bold font-dm-sans leading-7 mb-4 md:mb-0`}>
+                        <div className={`flex-grow pr-4 max-w-[85%]`}>
+                            <div className={`text-${visibleDescriptionId === faq.id ? 'sky-700' : 'stone-900'} text-xl md:text-[22px] lg:text-[22px] font-bold font-dm-sans leading-7`}>
                                 {faq.question}
                             </div>
                             {visibleDescriptionId === faq.id && (
-                                <div className="hidden lg:block w-[597px] h-[60px] overflow-hidden text-sky-700 text-lg font-normal font-dm-sans leading-[30px] mt-2 lg:mt-4">
+                                <div className="mt-2 text-sky-700 text-lg font-normal font-dm-sans leading-[30px]">
                                     {faq.answer}
                                 </div>
                             )}
                         </div>
                         <div
-                            className={`w-8 h-8 rounded-full cursor-pointer flex items-center justify-center relative ${visibleDescriptionId === faq.id ? 'bg-gradient-to-b from-sky-500 to-cyan-400' : 'bg-sky-500 bg-opacity-20'}`}
+                            className={`w-8 h-8 rounded-full cursor-pointer flex items-center justify-center relative ${visibleDescriptionId === faq.id ? 'bg-gradient-to-b from-sky-500 to-cyan-400' : 'bg-sky-500 bg-opacity-20'} ml-4`}
                             onClick={() => toggleDescription(faq.id)}
                         >
                             {visibleDescriptionId === faq.id ? (
@@ -84,10 +84,9 @@ const Faqs: React.FC = () => {
                                     </div>
                                     <div className="absolute">
                                         <Image src={cross} width={11.52} height={11.52} alt="cross-line" className="transform -rotate-90" />
-                                    </div>
-                                </>
+                                    </div></>
                             ) : (
-                                <Image src={plus} width={11.52} height={11.52} alt="plus-sign" />
+                                <Image src={plus} width={11.52} height={11.52} alt="plus-sign" className="pointer-events-none" />
                             )}
                         </div>
                     </div>

@@ -64,11 +64,11 @@ const Plans: React.FC = () => {
         },
     ];
     return (
-        <div className="flex space-x-[40px] mt-[51px] ml-[108px]">
+        <div className="flex flex-col md:flex-row mx-4 lg:ml-[108px] lg:space-x-[40px] mt-10 lg:mt-[51px] h-auto">
 
             {planDetails.map((plan, index) => (
-                <div key={index} className='w-[328px] h-[624px] border-2 rounded-[10px] border-sky-500'>
-                    <div className="text-slate-900 text-lg font-normal font-poppins ml-[23px] mt-[16px] w-[61px] h-[18px] text-[18px] leading-[27px]">{plan.title}</div>
+                <div key={index} className='w-full md:w-[328px]  border-2 rounded-[10px] border-sky-500 mb-4 lg:mb-0 h-auto'>
+                <div className="text-slate-900 text-lg font-normal font-poppins ml-[23px] mt-[16px] w-[61px] h-[18px] text-[18px] leading-[27px]">{plan.title}</div>
                     <div className="ml-[20px]">
                         <div className="flex text-center text-sky-500 text-[58px] leading-[87px] mr-[199px] font-semibold font-poppins mt-[1px] w-[100px] h-[87px]">
                             <div>{plan.price}</div>
@@ -87,7 +87,7 @@ const Plans: React.FC = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="text-slate-900 text-xs font-normal font-poppins leading-[20px] ml-[23px] h-[164px] w-[168px] flex flex-col justify-between mt-[39px]">
+                        <div className="text-slate-900 text-xs font-normal font-poppins leading-[20px] ml-[23px] h-[164px] w-[168px] flex flex-col justify-between mt-[39px] ">
                             {plan.additionalFeatures.map((feature, featureIdx) => (
                                 <div className="flex items-center mt-[5px]" key={featureIdx}>
                                     <Image className='mr-[8px]' src={tick} width={10} height={10} alt="logo" />
@@ -95,7 +95,7 @@ const Plans: React.FC = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex mt-[39px] text-white justify-center">
+                        <div className="flex mt-[39px] text-white justify-center mb-[22px]">
                             <button className='btn-primary w-[220px] h-[49px] text-white'>Choose plan</button>
                         </div>
 
