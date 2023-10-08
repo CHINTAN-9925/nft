@@ -22,21 +22,7 @@ const FooterSection: React.FC = () => {
     ];
 
     return (
-        // <div className="w-[417px] h-[205px] relative mt-[43px] ml-[48px]">
-        //     {navigationData.map((navItem, index) => (
-        //         <div
-        //             key={index}
-        //             style={{ top: `${navItem.y}px`, left: `${navItem.x}px` }}
-        //             className="absolute text-center text-base font-medium leading-[18px] whitespace-nowrap"
-        //         >
-        //             <span
-        //                 className={`text-${navItem.color} font-${navItem.font}`}
-        //             >
-        //                 {navItem.label}
-        //             </span>
-        //         </div>
-        //     ))}
-        // </div>
+        
         <div className="w-full md:w-[417px] h-[205px] relative mt-[43px] ml-[48px] md:ml-12 md:order-2">
             {navigationData.map((navItem, index) => (
                 <div

@@ -136,18 +136,6 @@ const Reviews: React.FC = () => {
                 </div>
             </div>
 
-
-
-            {/* <div className="text-center text-sky-700 text-xl sm:text-2xl md:text-[24px] lg:text-[28px] font-semibold font-poppins mt-4 sm:mt-6 md:mt-8 lg:mt-[23px] leading-[42px]">
-                Sophia Loyd
-            </div>
-            <div className="text-center text-neutral-400 text-base sm:text-lg md:text-xl font-normal font-poppins mt-2">
-                CEO xo
-            </div>
-            <div className="w-full max-w-2xl mx-auto text-center text-stone-900 text-base sm:text-lg md:text-xl font-normal font-poppins mt-4 sm:mt-6 lg:mt-[24px] px-4">
-                Lorem ipsum dolor sit amet consectetur. Pretium urna integer sit facilisi euismod. Non id sed consectetur dignissim egestas. Dignissim faucibus orci erat sagittis. Iaculis fermentum pellentesque dolor vitae suscipit habitant. Tincidunt amet quam sagittis viverra non pellentesque sed praesent. Elit duis magna risus sit nisl enim arcu. Sed duis sed et fermentum ultrices porta morbi. Cursus nibh sapien diam nullam volutpat volutpat sit augue nisl. Facilisi dignissim facilisis ut quis duis arcu cras scelerisque facilisis. Quis morbi nunc dolor lacinia tincidunt.
-            </div> */}
-
             <div className="relative bg-gradient-to-r from-sky-400 via-blue-300 to-sky-400 mt-8 lg:mt-[119px] h-[217px] lg:h-auto lg:flex lg:w-[1280px]">
 
                 {/* For smaller screens: Using the Image as a background */}
