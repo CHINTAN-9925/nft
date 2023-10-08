@@ -1,0 +1,29 @@
+<svg width="38" height="42" viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cronos-cro-logo 1" clip-path="url(#clip0_448_52)">
+<path id="Vector" d="M19.0158 0L0 10.5V31.5L19.0158 42L38 31.5V10.5L19.0158 0ZM32.368 28.3833L18.9842 35.7666L5.63197 28.3833V13.6167L19.0158 6.23343L32.368 13.6167V28.3833Z" fill="url(#paint0_linear_448_52)"/>
+<path id="Vector_2" d="M19.0158 42L38 31.5V10.5L19.0158 0V6.23343L32.368 13.6167V28.4135L18.9841 35.7968V42H19.0158Z" fill="url(#paint1_linear_448_52)"/>
+<path id="Vector_3" d="M18.9842 0L0 10.5V31.5L18.9842 42V35.7666L5.63197 28.3833V13.5865L18.9842 6.23343V0Z" fill="url(#paint2_linear_448_52)"/>
+<path id="Vector_4" d="M27.8752 25.902L19.0159 30.8041L10.125 25.902V16.098L19.0159 11.196L27.8752 16.098L24.1733 18.1556L18.9843 15.281L13.8269 18.1556V23.8747L19.0159 26.7493L24.2049 23.8747L27.8752 25.902Z" fill="url(#paint3_linear_448_52)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_448_52" x1="19" y1="0" x2="19" y2="42" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008CFF"/>
+<stop offset="1" stop-color="#00D1FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_448_52" x1="28.492" y1="0" x2="28.492" y2="42" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008CFF"/>
+<stop offset="1" stop-color="#00D1FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_448_52" x1="9.49209" y1="0" x2="9.49209" y2="42" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008CFF"/>
+<stop offset="1" stop-color="#00D1FF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_448_52" x1="19.0001" y1="11.196" x2="19.0001" y2="30.8041" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008CFF"/>
+<stop offset="1" stop-color="#00D1FF"/>
+</linearGradient>
+<clipPath id="clip0_448_52">
+<rect width="38" height="42" fill="white"/>
+</clipPath>
+</defs>
+</svg>
